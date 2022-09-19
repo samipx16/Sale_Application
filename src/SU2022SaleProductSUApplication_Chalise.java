@@ -94,6 +94,9 @@ public class SU2022SaleProductSUApplication_Chalise {
 					else if(productSize == 0) {
 						break; // Exit the cup menu
 					}
+					else {
+						System.out.println("Invalid Option!!");
+					}
 				} // While loop end brace
 				
 				
@@ -133,6 +136,7 @@ public class SU2022SaleProductSUApplication_Chalise {
 			else if(option ==2) {
 				// Write code here
 				System.out.println("Enter the name of the file: ");
+			
 				String fileName = keyboard.next();
 				String[] parts = fileName.split("_");
 				String part1 = parts[0];
@@ -177,8 +181,6 @@ public class SU2022SaleProductSUApplication_Chalise {
 				  SU2022ProductSU_Chalise reporting = new SU2022ProductSU_Chalise(arrayTotalUnits, arrayPrice);
 				  System.out.println(reporting.printReport(finalDate));
 					}
-				
-			
 					
 				}
 				
@@ -292,6 +294,7 @@ public class SU2022SaleProductSUApplication_Chalise {
 				System.out.print("You've Exited the Program!!");
 				break;
 			}
+			
 			
 		}
 	}
